@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Anoushka's Camera</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    body{
+        font-family: 'Tajawal', sans-serif;
+        font: bold;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: black;
+        height: 100px;
+        background: url(foliobg.jpg);
+    }
+    .left{
+        position: absolute;
+        left: 40px;
+        top: 22px;
+        display: inline-block;
+        /*border: 2px solid red;*/
+    }
+    .left img{
+        padding-left: 32px;
+        width: 70px;
+        /*filter: invert(100%);*/
+    }
+    .left div{
+        font-family: 'Courgette', cursive;
+        text-align: center;
+        line-height: 10px;
+        font-size: 15px;
+    }
+    .mid{
+        display: block;
+        width: 43%;
+        margin: 20px auto; /*y axis and then x axis*/
+        /*border: 2px solid green;*/
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 33px;
+        display: inline-block;
+        /*border: 2px solid blue;*/
+    }
+    .navbar{
+        display: inline-block;
+        /*position: fixed;
+        top: 10px;*/
+    }
+    .navbar li{
+        font-size: 18px;
+        display: inline-block;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: khaki;
+    }
+    .btn{
+        font-family: 'Tajawal', sans-serif;
+        margin: 5px 9px;
+        color: white;
+        background-color: black;
+        padding: 3px 14px;
+        border: 2px solid grey;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(59, 58, 58);
+    }
+    .pic1 img{
+        display: inline-block;
+        width:20%;
+        position: relative;
+        top:100px;
+        margin-left: 60px;
+    }
+    .pic2 img{
+        /*display: block;*/
+        width:20%;
+        position: relative;
+        /*top:100px;*/
+        bottom: 265px; 
+        left: 39%;
+    }
+    .pic3 img{
+        width:20%;
+        position: relative;
+        bottom: 631px; 
+        left: 73%;
+    }
+    .pic4 img{
+        display: inline-block;
+        width:20%;
+        position: relative;
+        bottom: 500px;
+        margin-left: 60px;
+    }
+    .pic5 img{
+        display: inline;
+        width:20%;
+        position: relative;
+        bottom: 985px;
+        left: 39%;
+    }
+    .pic6 img{
+        width:22%;
+        position: relative;
+        bottom: 1425px;
+        left: 73%;
+    }
+</style>
+<body>
+    <header class="header">
+        <!--Left box for logo-->
+        <div class="left">
+            <img src="camera.jpg" alt="">
+            <div>Anoushka's Camera</div>
+        </div>
+        <!--Mid box for nav bar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Portfolio</a></li>
+                <li><a href="aboutpage.html">About</a></li>
+                <li><a href="contactpage.html">Contact</a></li>
+            </ul>
+        </div>
+        <!--Right box for buttons-->
+        <div class="right">
+            <button class="btn">Call Now</button>
+            <button class="btn">Email Now</button>
+        </div>
+    </header>
+    <div class="pic1">
+        <img src="picture1.jpg" alt="">
+    </div>
+    <div class="pic2">
+        <img src="picture2.jpg" alt="">
+    </div>
+    <div class="pic3">
+        <img src="picture3.jpg" alt="">
+    </div>
+    <div class="pic4">
+        <img src="picture4.jpg" alt="">
+    </div>
+    <div class="pic5">
+        <img src="picture5.jpg" alt="">
+    </div>
+    <div class="pic6">
+        <img src="picture6.jpg" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Anoushka's Camera</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    body{
+        font-family: 'Tajawal', sans-serif;
+        font: bold;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: black;
+        height: 100px;
+    }
+    .left{
+        position: absolute;
+        left: 40px;
+        top: 22px;
+        display: inline-block;
+        /*border: 2px solid red;*/
+    }
+    .left img{
+        padding-left: 32px;
+        width: 70px;
+        /*filter: invert(100%);*/
+    }
+    .left div{
+        font-family: 'Courgette', cursive;
+        text-align: center;
+        line-height: 10px;
+        font-size: 15px;
+    }
+    .mid{
+        display: block;
+        width: 43%;
+        margin: 20px auto; /*y axis and then x axis*/
+        /*border: 2px solid green;*/
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 33px;
+        display: inline-block;
+        /*border: 2px solid blue;*/
+    }
+    .navbar{
+        display: inline-block;
+        /*position: fixed;*/
+        /*top: 10px;*/
+    }
+    .navbar li{
+        font-size: 18px;
+        display: inline-block;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: khaki;
+    }
+    .btn{
+        font-family: 'Tajawal', sans-serif;
+        margin: 5px 9px;
+        color: white;
+        background-color: black;
+        padding: 3px 14px;
+        border: 2px solid grey;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(59, 58, 58);
+    }
+    .info{
+        display: inline-block;
+        position: relative;
+        top: 50px;
+        padding: 2px 3px;
+        margin: 3px 5px;
+        width: 50%;
+    }
+    .info h1{
+        font-family: 'Spectral', serif;
+        padding: 2px 3px;
+        margin: 2px 20px;
+    }
+    .para1{
+        font-family: 'Spectral', serif;
+        padding: 2px 1px;
+        margin: 30px 20px;
+        margin-top: 20px;
+        text-align: justify;
+        /*line-height: 3px;*/
+    }
+    .para2{
+        font-family: 'Spectral', serif;
+        padding: 2px 1px;
+        margin: 30px 20px;
+        text-align: justify;
+        /*line-height: 3px;*/
+    }
+    .para3{
+        font-family: 'Spectral', serif;
+        padding: 2px 1px;
+        margin: 30px 20px;
+        text-align: justify;
+        /*line-height: 3px;*/
+    }
+    .abtimg{
+        width:50%;
+        margin: 2px 3px;
+        padding: 2px 3px;
+        position: relative;
+        top: -400px;
+        left: 665px;
+    }
+</style>
+<body>
+    <header class="header">
+        <!--Left box for logo-->
+        <div class="left">
+            <img src="camera.jpg" alt="">
+            <div>Anoushka's Camera</div>
+        </div>
+        <!--Mid box for nav bar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="folio.html">Portfolio</a></li>
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="contactpage.html">Contact</a></li>
+            </ul>
+        </div>
+        <!--Right box for buttons-->
+        <div class="right">
+            <button class="btn">Call Now</button>
+            <button class="btn">Email Now</button>
+        </div>
+    </header>
+    <div class="info">
+        <h1>About Anoushka</h1>
+        <div class="para1">
+            Anoushka is a 20 year old girl from Kanpur, India. She completed her schooling from Indian School Salalah, Oman. She is currently pursuing her Bachelors Degree in Computer Science Engineering from Maulana Azad National Institute of Technology, Bhopal, India. She lived most of her life in Salalah, Oman.
+        </div>
+        <div class="para2">
+            As a child, she was interested in reading and writing. As she grew and the use of cameras increased, she got fascinated by it. Whenever she got a chance, she photographed everything around her. The sky is an art. Most of her early work includes photographs of the clouds, the evening sky and the brilliance of sunshine through the clouds. She doesn't get much opportunity to capture sceneries so she depends on daily life objects around her for her photography.
+        </div>
+        <div class="para3">
+            She continues to be a limited photographer. Her work is getting diverse. This website is a glimpse to some of her work till now. She is still an amateur but keen to learn and improve. She believes that there ain't no perfect photograph. Every picture is a story.
+        </div>
+    </div>
+    <div class="abtimg">
+        <img src="aboutimg.jpg" alt="">
+    </div>
+</body>
+</html>

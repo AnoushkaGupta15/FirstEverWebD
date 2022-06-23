@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Anoushka's Camera</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    body{
+        font-family: 'Tajawal', sans-serif;
+        font: bold;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: black;
+        height: 100px;
+        background: url(contactbg.jpg);
+    }
+    .left{
+        position: absolute;
+        left: 40px;
+        top: 22px;
+        display: inline-block;
+        /*border: 2px solid red;*/
+    }
+    .left img{
+        padding-left: 32px;
+        width: 70px;
+        /*filter: invert(100%);*/
+    }
+    .left div{
+        font-family: 'Courgette', cursive;
+        text-align: center;
+        line-height: 10px;
+        font-size: 15px;
+    }
+    .mid{
+        display: block;
+        width: 43%;
+        margin: 20px auto; /*y axis and then x axis*/
+        /*border: 2px solid green;*/
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 33px;
+        display: inline-block;
+        /*border: 2px solid blue;*/
+    }
+    .navbar{
+        display: inline-block;
+        /*position: fixed;
+        top: 10px;*/
+    }
+    .navbar li{
+        font-size: 18px;
+        display: inline-block;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: khaki;
+    }
+    .btn{
+        font-family: 'Tajawal', sans-serif;
+        margin: 5px 9px;
+        color: white;
+        background-color: black;
+        padding: 3px 14px;
+        border: 2px solid grey;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(59, 58, 58);
+    }
+    .container1{
+        display: block;
+        position: relative;
+        bottom: 420px;
+        left: 62%;
+        /*border: 2px solid white;*/
+        margin: 440px 40px;
+        padding: 30px 30px;
+        width: 30%;
+        border-radius: 25px;
+    }
+    .form-group input{
+        font-family: 'Ubuntu', sans-serif;
+        font: bold;
+        display: block;
+        width: 300px;
+        height: 20px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 10px 1px;
+    }
+    .container2 h2{
+        font-family: "Century Gothic, CenturyGothic, AppleGothic", sans-serif;
+        font-size: 40px;
+        display: block;
+        margin: 2px 3px;
+        position: absolute;
+        bottom: 400px;
+        left: 5%;
+    }
+    .c2p1{
+        display: block;
+        position: absolute;
+        bottom: 350px;
+        left: 5.5%;
+        font-size: 20px;
+    }
+    .c2p2{
+        display: block;
+        position: absolute;
+        bottom: 280px;
+        left: 5.5%;
+        font-size: 20px;
+    }
+    .c2p3{
+        display: block;
+        position: absolute;
+        bottom: 250px;
+        left: 5.5%;
+        font-size: 20px;
+    }
+    .container1 button{
+        display: block;
+        width: 20%;
+        margin: 2px 228px;
+    }
+</style>
+<body>
+    <header class="header">
+        <!--Left box for logo-->
+        <div class="left">
+            <img src="camera.jpg" alt="">
+            <div>Anoushka's Camera</div>
+        </div>
+        <!--Mid box for nav bar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="folio.html">Portfolio</a></li>
+                <li><a href="aboutpage.html">About</a></li>
+                <li><a href="#" class="active">Contact</a></li>
+            </ul>
+        </div>
+        <!--Right box for buttons-->
+        <div class="right">
+            <button class="btn">Call Now</button>
+            <button class="btn">Email Now</button>
+        </div>
+    </header>
+    <div class="container1">
+        <form action="noaction.php">
+            <label for="fname">First Name
+                <div class="form-group">
+                    <input type="text" name="myfName" id="fname">
+                </div>
+            </label>
+            <label for="lname">Last Name
+                <div class="form-group">
+                    <input type="text" name="mylName" id="lname">
+                </div>
+            </label>
+            <label for="emailid">Email
+                <div class="form-group">
+                    <input type="email" name="myEmail" id="emailid">
+                </div>
+            </label>
+            <label for="phno">Phone Number
+                <div class="form-group">
+                    <input type="text" name="myphno" id="phno">
+                </div>
+            </label>
+            <label for="msg">Leave a Message
+                <div class="form-group">
+                    <textarea name="mytext" cols="39" rows="10"></textarea>
+                </div>
+            </label>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <div class="container2">
+        <h2>Get in Touch</h2>
+        <div class="c2p1">
+            Anoushka Gupta
+        </div>
+        <div class="c2p2">
+            Email: anuvivek.2001@gmail.com
+        </div>
+        <div class="c2p3">
+            Phone Number: +918604531406
+        </div>
+    </div>
+</body>
+</html>

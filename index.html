@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anoushka's Camera</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /*CSS Reset*/
+    body{
+        font-family: 'Tajawal', sans-serif;
+        font: bold;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('bg.jpg');
+        height: 800px;
+    }
+    .left{
+        position: absolute;
+        left: 40px;
+        top: 22px;
+        display: inline-block;
+        /*border: 2px solid red;*/
+    }
+    .left img{
+        padding-left: 32px;
+        width: 70px;
+        /*filter: invert(100%);*/
+    }
+    .left div{
+        font-family: 'Courgette', cursive;
+        text-align: center;
+        line-height: 10px;
+        font-size: 15px;
+    }
+    .mid{
+        display: block;
+        width: 43%;
+        margin: 20px auto; /*y axis and then x axis*/
+        /*border: 2px solid green;*/
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 33px;
+        display: inline-block;
+        /*border: 2px solid blue;*/
+    }
+    .navbar{
+        display: inline-block;
+        /*position: fixed;
+        top: 10px;*/
+    }
+    .navbar li{
+        font-size: 18px;
+        display: inline-block;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: khaki;
+    }
+    .btn{
+        font-family: 'Tajawal', sans-serif;
+        margin: 5px 9px;
+        color: white;
+        background-color: black;
+        padding: 3px 14px;
+        border: 2px solid grey;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(59, 58, 58);
+    }
+    .intro{
+        margin: 2px;
+        border: 2px;
+        padding: 120px 3px;
+    }
+    .box1{
+        font-family: 'Lato', sans-serif;
+        display: block;
+        /*border: 2px solid green;*/
+        /*padding: 2px 3px;*/
+        /*margin: 2px;*/
+        text-align: center;
+        line-height: 2px;
+        font-size: 30px;
+        color: #9da8c1;;
+    }
+    .box2{
+        font-family: 'Lato', sans-serif;
+        display: block;
+        /*border: 2px solid red;*/
+        text-align: center;
+        line-height: 50px;
+        font-size: 35px;
+        color: #9da8c1;;
+    }
+    .box3{
+        display: block;
+        /*border: 2px solid blue;*/
+        text-align: center;
+        line-height: 0px;
+    }
+    .logos{
+        padding: 2px 10px;
+    }
+    .logos img{
+        padding: 15px 3px;
+        margin: 2px 540px;
+        box-sizing: border-box;
+        border-left: 2px;
+        width: 20%;
+        filter: invert(100%);
+        position: absolute;
+        bottom: -200px;
+    }
+    .container{
+        display: block;
+        border: 2px solid white;
+        margin: 440px 40px;
+        padding: 30px 30px;
+        width: 30%;
+        border-radius: 25px;
+    }
+    .form-group input{
+        font-family: 'Ubuntu', sans-serif;
+        font: bold;
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 8px auto;
+        font-size: 16px;
+    }
+    .container h2{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 25%;
+        margin: auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <!--Left box for logo-->
+        <div class="left">
+            <img src="camera.jpg" alt="">
+            <div>Anoushka's Camera</div>
+        </div>
+        <!--Mid box for nav bar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="folio.html">Portfolio</a></li>
+                <li><a href="aboutpage.html">About</a></li>
+                <li><a href="contactpage.html">Contact</a></li>
+            </ul>
+        </div>
+        <!--Right box for buttons-->
+        <div class="right">
+            <button class="btn">Call Now</button>
+            <button class="btn">Email Now</button>
+        </div>
+    </header>
+    <div class="intro">
+        <div class="box1">
+            <h1>Welcome to</h1>
+        </div>
+        <div class="box2">
+            <h1>ANOUSHKA'S CAMERA LAND</h1>
+        </div>
+        <div class="box3">
+            When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.
+        </div>
+    </div>
+    <div class="logos">
+        <img src="logos.jpg" alt="">
+    </div>
+    <!-- <div class="container">
+        <h2>Want to Learn?</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email-ID">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your City">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div> -->
+</body>
+</html>
